@@ -1,0 +1,157 @@
+.Register-background{
+    display:flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+
+/* Register Page Container */
+.Register-container {
+    position: relative; /* Ensure it's relative for any absolute children */
+    width: 90%;
+    max-width: 500px;
+    padding: 40px 30px;
+    
+    /* Semi-transparent beige background */
+    background: rgba(245, 245, 220, 0.8); /* Beige with opacity */
+    backdrop-filter: blur(5px);
+    
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    
+    /* Ensure the container is above decorative elements */
+    z-index: 2;
+  }
+  
+  /* Decorative Element Inspired by Mona Lisa */
+  .decorative-element {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%);
+    border-radius: 50%;
+    opacity: 0.2;
+    top: 10%;
+    left: 85%;
+    transform: rotate(-30deg);
+    filter: blur(10px);
+    pointer-events: none;
+    
+    /* Optional: Add animation for subtle movement */
+    animation: float 30s ease-in-out infinite;
+  }
+  
+  /* Float Animation for Decorative Element */
+  @keyframes float {
+    0% {
+      transform: rotate(-30deg) translateY(0px);
+    }
+    50% {
+      transform: rotate(-30deg) translateY(-20px);
+    }
+    100% {
+      transform: rotate(-30deg) translateY(0px);
+    }
+  }
+  
+  /* Register Form Styling */
+  .Register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 3; /* Ensure the form is above decorative elements */
+  }
+  
+  /* Form Title */
+  .Register-form h2 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.5em;
+    color: #fff; /* White text for contrast */
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* Adds depth to the text */
+  }
+  
+  /* Form Group Styling */
+  .form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Label Styling */
+  .form-group label {
+    display: block;
+    font-size: 1em;
+    color: #fff; /* White labels for contrast */
+    margin-bottom: 5px;
+  }
+  
+  /* Input Styling */
+  .form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    transition: box-shadow 0.3s;
+    
+    /* Semi-transparent input background */
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Input Focus Styling */
+  .form-group input:focus {
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+  }
+  
+  /* Register Button Styling */
+  .register-button {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #28a745; /* Vibrant green */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  /* Register Button Hover Effect */
+  .register-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.02);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Register-container {
+      padding: 30px 20px;
+    }
+  
+    .Register-form h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+  
+    .form-group label,
+    .form-group input {
+      font-size: 0.95em;
+    }
+  
+    .register-button {
+      font-size: 1em;
+      padding: 12px 0;
+    }
+    
+    .decorative-element {
+      width: 100px;
+      height: 100px;
+      top: 15%;
+      left: 75%;
+    }
+  }
+  

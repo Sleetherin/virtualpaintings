@@ -8,7 +8,7 @@ function Home() {
     <div className="App">
       <header className="App-header">
         <h1>Virtual Paints</h1>
-        <Link to="/login"><button>Buy Art</button></Link>
+        <Link to="/products"><button>Buy Art</button></Link>
       </header>
     </div>
   )

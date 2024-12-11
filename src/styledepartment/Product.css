@@ -1,3 +1,30 @@
 .product{
   background-color: maroon;
+  text-align: center;
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid red;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img{
+  
+  align-self: center;
+  margin-top: 1em;
+}
+
+.description{
+  text-align: center;
+  margin: 1em 1.5em;
+}
+
+.button{
+  width:5em;
+  height: auto;
+  background-color: yellowgreen;
+  align-self: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }

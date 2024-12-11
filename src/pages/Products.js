@@ -1,15 +1,14 @@
 import React from 'react';
 import Product from '../components/Product';
 
+import '../styledepartment/Products.css';
+
 function Products() {
   return (
-    <div>
+    <div className='productsDisplay'>
       <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
-      <Product/>
+   
+ 
     </div>
   )
 }
